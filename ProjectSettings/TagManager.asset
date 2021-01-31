@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - ground
+  - Something
+  - collectible
+  - key
+  - wall
+  - redcube
   layers:
   - Default
   - TransparentFX
@@ -17,7 +22,7 @@ TagManager:
   - PostProcessing
   - ground
   - intractable
-  - 
+  - grabbable
   - 
   - 
   - 

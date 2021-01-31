@@ -43,10 +43,16 @@ public class RaycastE : MonoBehaviour
         if (Physics.Raycast(playerCam.transform.position, playerCam.transform.forward, out hit, distanceLimit))
         {
             OpenDoor doorScript = hit.transform.GetComponent<OpenDoor>(); // Gets the door script if available
+            CradleRemember cradleRemember = hit.transform.GetComponent<CradleRemember>(); // Gets the cradle remember scene
             // In case of opening the door script 
             if (doorScript != null)
             {
                 doorScript.SendMessage("Run");
+            }
+
+            if (cradleRemember != null)
+            {
+                cradleRemember.SendMessage("Run");
             }
         }
     }
