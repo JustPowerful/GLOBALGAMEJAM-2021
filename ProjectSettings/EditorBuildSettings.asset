@@ -27,9 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/2d red cube final.unity
     guid: ad1b042e1731e9a489288127389319f3
   - enabled: 1
-    path: Assets/Scenes/2d red cube escape.unity
-    guid: 5cf8545bb06621341a2e62d5d7646293
-  - enabled: 1
-    path: Assets/Scenes/Storytell 4.unity
-    guid: 1a5b3bf2d6cb1d9419ce34666cf7cc57
+    path: Assets/Scenes/DREAM.unity
+    guid: 13cd0420d75e2e94da903b4c9f4f7d28
   m_configObjects: {}

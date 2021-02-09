@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RaycastE : MonoBehaviour
 {
@@ -18,6 +19,12 @@ public class RaycastE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
         if (Input.GetKey("e"))
         {
             FindAndRun();
@@ -44,6 +51,7 @@ public class RaycastE : MonoBehaviour
         {
             OpenDoor doorScript = hit.transform.GetComponent<OpenDoor>(); // Gets the door script if available
             CradleRemember cradleRemember = hit.transform.GetComponent<CradleRemember>(); // Gets the cradle remember scene
+            mazepick mp = hit.transform.GetComponent<mazepick>();
             // In case of opening the door script 
             if (doorScript != null)
             {
